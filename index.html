@@ -16,22 +16,63 @@
         Check out my <a href="https://www.youtube.com/channel/UC5bSCGdcE9x9ffqqgJlGp5Q">
         YouTube channel</a>!</p>
     <h2>Convolution</h2>
+    <h3>The Basic Algorithm</h3>
+    Watch the companion YouTube video: <a href="https://youtu.be/eMXuk97NeSI">Fundamental Algorithm of Convolution in Neural Networks</a>.
+    <img src="media/convolution-animation-3x3-kernel.gif" width="960" height="540">
+    <h3>Padding</h3>
+    Companion video: <a href="https://youtu.be/ph4LrdntONo">Convolution Padding - Neural Networks</a>
     <table>
         <tr>
-            <td><video src="media/3x3s1p0.mp4" width="480" height="270" controls autoplay muted loop></td>
-            <td><video src="media/3x3s1p1.mp4" width="480" height="270" controls autoplay muted loop></td>
+            <td><img src="media/convolution-animation-3x3-kernel.gif" width="480" height="270"></td>
+            <td><img src="media/convolution-animation-3x3-kernel-same-padding.gif" width="480" height="270"></td>
         </tr>
         <tr>
-            <td>No Padding AKA "Valid"; Stride of 1</td>
-            <td>[1,1,1,1] Padding AKA "Same"; Stride of 1</td>
+            <td>No Padding AKA "Valid"</td>
+            <td>[1,1,1,1] Padding AKA "Same"</td>
+        </tr>
+    </table>
+    <h3>Stride</h3>
+    Companion video: <a href="https://youtu.be/3TdBtI9dh2I">Stride - Convolution in Neural Networks</a>
+    <table>
+        <thead>
+            <tr><th>Stride 1</th><th>Stride 2</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="media/convolution-animation-3x3-kernel.gif" width="480" height="270"></td>
+                <td><img src="media/convolution-animation-3x3-kernel-stride-2.gif" width="480" height="270"></td>
+            </tr>
+            <tr>
+                <td>No Padding AKA "Valid"; Stride of 1</td>
+                <td>No Padding AKA "Valid"; Stride of 2</td>
+            </tr>
+            <tr>
+                <td><img src="media/convolution-animation-3x3-kernel-same-padding.gif" width="480" height="270"></td>
+                <td><img src="media/convolution-animation-3x3-kernel-stride-2-same-padding.gif" width="480" height="270"></td>
+            </tr>
+            <tr>
+                <td>[1,1,1,1] Padding AKA "Same"; Stride of 1</td>
+                <td>[1,1,1,1] Padding AKA "Same"; Stride of 2</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>Groups, Depthwise, and Depthwise-Separable</h3>
+    <table>
+        <tr>
+            <td><img src="media/convolution-animation-3x3-kernel.gif" width="480" height="270"></td>
+            <td><img src="media/convolution-animation-3x3-kernel-2-groups.gif" width="480" height="270"></td>
         </tr>
         <tr>
-            <td><video src="media/3x3s2p0.mp4" width="480" height="270" controls autoplay muted loop></td>
-            <td><video src="media/3x3s2p1.mp4" width="480" height="270" controls autoplay muted loop></td>
+            <td>1 Group</td>
+            <td>2 Groups</td>
         </tr>
         <tr>
-            <td>No Padding AKA "Valid"; Stride of 2</td>
-            <td>[1,1,1,1] Padding AKA "Same"; Stride of 2</td>
+            <td><img src="media/depthwise-convolution-animation-3x3-kernel.gif" width="480" height="270"></td>
+            <td><img src="media/depthwise-separable-convolution-animation-3x3-kernel.gif" width="480" height="270"></td>
+        </tr>
+        <tr>
+            <td>Depthwise (8 Groups)</td>
+            <td>Depthwise-separable (8 Groups followed by pointwise)</td>
         </tr>
     </table>
     <h2></h2>
