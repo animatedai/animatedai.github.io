@@ -18,13 +18,16 @@
     <h2>Convolution</h2>
     <h3>The Basic Algorithm</h3>
     Watch the companion YouTube video: <a href="https://youtu.be/eMXuk97NeSI">Fundamental Algorithm of Convolution in Neural Networks</a>.
-    <img src="media/convolution-animation-3x3-kernel.gif" width="960" height="540">
+    <img src="media/convolution-animation-3x3-kernel.gif" width="960" height="540"
+    alt="The process of convolution in neural networks with a 3x3 kernel size">
     <h3>Padding</h3>
     Companion video: <a href="https://youtu.be/ph4LrdntONo">Convolution Padding - Neural Networks</a>
     <table>
         <tr>
-            <td><img src="media/convolution-animation-3x3-kernel.gif" width="480" height="270"></td>
-            <td><img src="media/convolution-animation-3x3-kernel-same-padding.gif" width="480" height="270"></td>
+            <td><img src="media/convolution-animation-3x3-kernel.gif" width="480" height="270"
+                alt="The process of convolution in neural networks with a 3x3 kernel size"></td>
+            <td><img src="media/convolution-animation-3x3-kernel-same-padding.gif" width="480" height="270"
+                alt="The process of convolution in neural networks with a 3x3 kernel size and a padding of 'SAME', i.e., 1 pixel on the top, bottom, left, and right."></td>
         </tr>
         <tr>
             <td>No Padding AKA "Valid"</td>
@@ -39,8 +42,10 @@
         </thead>
         <tbody>
             <tr>
-                <td><img src="media/convolution-animation-3x3-kernel.gif" width="480" height="270"></td>
-                <td><img src="media/convolution-animation-3x3-kernel-stride-2.gif" width="480" height="270"></td>
+                <td><img src="media/convolution-animation-3x3-kernel.gif" width="480" height="270"
+                    alt="The process of convolution in neural networks with a 3x3 kernel size"></td>
+                <td><img src="media/convolution-animation-3x3-kernel-stride-2.gif" width="480" height="270"
+                    alt="The process of convolution in neural networks with a 3x3 kernel size and a stride of 2x2"></td>
             </tr>
             <tr>
                 <td>No Padding AKA "Valid"; Stride of 1</td>
@@ -48,7 +53,8 @@
             </tr>
             <tr>
                 <td><img src="media/convolution-animation-3x3-kernel-same-padding.gif" width="480" height="270"></td>
-                <td><img src="media/convolution-animation-3x3-kernel-stride-2-same-padding.gif" width="480" height="270"></td>
+                <td><img src="media/convolution-animation-3x3-kernel-stride-2-same-padding.gif" width="480" height="270"
+                    alt="The process of convolution in neural networks with a 3x3 kernel size, a stride of 2x2, and a padding of 'SAME', i.e., 1 pixel on the top, bottom, left, and right."></td>
             </tr>
             <tr>
                 <td>[1,1,1,1] Padding AKA "Same"; Stride of 1</td>
@@ -59,16 +65,20 @@
     <h3>Groups, Depthwise, and Depthwise-Separable</h3>
     <table>
         <tr>
-            <td><img src="media/convolution-animation-3x3-kernel.gif" width="480" height="270"></td>
-            <td><img src="media/convolution-animation-3x3-kernel-2-groups.gif" width="480" height="270"></td>
+            <td><img src="media/convolution-animation-3x3-kernel.gif" width="480" height="270"
+                alt="The process of convolution in neural networks with a 3x3 kernel size"></td>
+            <td><img src="media/convolution-animation-3x3-kernel-2-groups.gif" width="480" height="270"
+                alt="The process of convolution in neural networks with a 3x3 kernel size and 2 groups"></td>
         </tr>
         <tr>
             <td>1 Group</td>
             <td>2 Groups</td>
         </tr>
         <tr>
-            <td><img src="media/depthwise-convolution-animation-3x3-kernel.gif" width="480" height="270"></td>
-            <td><img src="media/depthwise-separable-convolution-animation-3x3-kernel.gif" width="480" height="270"></td>
+            <td><img src="media/depthwise-convolution-animation-3x3-kernel.gif" width="480" height="270"
+                alt="The process of convolution in neural networks with a 3x3 kernel size and 8 groups making it a depthwise convolution"></td>
+            <td><img src="media/depthwise-separable-convolution-animation-3x3-kernel.gif" width="480" height="270"
+                alt="A depthwise convolution layer followed by a pointwise convolution layer making the combined process a depthwise-separable convolution"></td>
         </tr>
         <tr>
             <td>Depthwise (8 Groups)</td>
