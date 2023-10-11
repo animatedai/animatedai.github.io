@@ -28,15 +28,15 @@
     <h2>Convolution</h2>
     <h3>The Basic Algorithm</h3>
     Watch the companion YouTube video: <a href="https://youtu.be/eMXuk97NeSI">Fundamental Algorithm of Convolution in Neural Networks</a>.
-    <img src="media/convolution-animation-3x3-kernel.gif" width="960" height="540"
+    <img src="media/convolution-animation-3x3-kernel.gif" width="960" height="auto"
     alt="The process of convolution in neural networks with a 3x3 kernel size">
     <h3>Padding</h3>
     Companion video: <a href="https://youtu.be/ph4LrdntONo">Convolution Padding - Neural Networks</a>
     <table>
         <tr>
-            <td><img src="media/convolution-animation-3x3-kernel.gif" width="480" height="270"
+            <td><img src="media/convolution-animation-3x3-kernel.gif" width="480" height="auto"
                 alt="The process of convolution in neural networks with a 3x3 kernel size"></td>
-            <td><img src="media/convolution-animation-3x3-kernel-same-padding.gif" width="480" height="270"
+            <td><img src="media/convolution-animation-3x3-kernel-same-padding.gif" width="480" height="auto"
                 alt="The process of convolution in neural networks with a 3x3 kernel size and a padding of 'SAME', i.e., 1 pixel on the top, bottom, left, and right."></td>
         </tr>
         <tr>
@@ -52,9 +52,9 @@
         </thead>
         <tbody>
             <tr>
-                <td><img src="media/convolution-animation-3x3-kernel.gif" width="480" height="270"
+                <td><img src="media/convolution-animation-3x3-kernel.gif" width="480" height="auto"
                     alt="The process of convolution in neural networks with a 3x3 kernel size"></td>
-                <td><img src="media/convolution-animation-3x3-kernel-stride-2.gif" width="480" height="270"
+                <td><img src="media/convolution-animation-3x3-kernel-stride-2.gif" width="480" height="auto"
                     alt="The process of convolution in neural networks with a 3x3 kernel size and a stride of 2x2"></td>
             </tr>
             <tr>
@@ -62,8 +62,8 @@
                 <td>No Padding AKA "Valid"; Stride of 2</td>
             </tr>
             <tr>
-                <td><img src="media/convolution-animation-3x3-kernel-same-padding.gif" width="480" height="270"></td>
-                <td><img src="media/convolution-animation-3x3-kernel-stride-2-same-padding.gif" width="480" height="270"
+                <td><img src="media/convolution-animation-3x3-kernel-same-padding.gif" width="480" height="auto"></td>
+                <td><img src="media/convolution-animation-3x3-kernel-stride-2-same-padding.gif" width="480" height="auto"
                     alt="The process of convolution in neural networks with a 3x3 kernel size, a stride of 2x2, and a padding of 'SAME', i.e., 1 pixel on the top, bottom, left, and right."></td>
             </tr>
             <tr>
@@ -76,9 +76,9 @@
     Watch the companion YouTube video: <a href="https://youtu.be/vVaRhZXovbw">Groups, Depthwise, and Depthwise-Separable Convolution (Neural Networks)</a>.
     <table>
         <tr>
-            <td><img src="media/convolution-animation-3x3-kernel.gif" width="480" height="270"
+            <td><img src="media/convolution-animation-3x3-kernel.gif" width="480" height="auto"
                 alt="The process of convolution in neural networks with a 3x3 kernel size"></td>
-            <td><img src="media/convolution-animation-3x3-kernel-2-groups.gif" width="480" height="270"
+            <td><img src="media/convolution-animation-3x3-kernel-2-groups.gif" width="480" height="auto"
                 alt="The process of convolution in neural networks with a 3x3 kernel size and 2 groups"></td>
         </tr>
         <tr>
@@ -86,14 +86,55 @@
             <td>2 Groups</td>
         </tr>
         <tr>
-            <td><img src="media/depthwise-convolution-animation-3x3-kernel.gif" width="480" height="270"
+            <td><img src="media/depthwise-convolution-animation-3x3-kernel.gif" width="480" height="auto"
                 alt="The process of convolution in neural networks with a 3x3 kernel size and 8 groups making it a depthwise convolution"></td>
-            <td><img src="media/depthwise-separable-convolution-animation-3x3-kernel.gif" width="480" height="270"
+            <td><img src="media/depthwise-separable-convolution-animation-3x3-kernel.gif" width="480" height="auto"
                 alt="A depthwise convolution layer followed by a pointwise convolution layer making the combined process a depthwise-separable convolution"></td>
         </tr>
         <tr>
             <td>Depthwise (8 Groups)</td>
             <td>Depthwise-separable (8 Groups followed by pointwise)</td>
+        </tr>
+    </table>
+    <h2>Pixel Shuffle</h2>
+    <h3>2x2 Block Size</h3>
+    <table>
+        <tr>
+            <td><img src="media/pixel-shuffle-2x2-shuffle.gif" width="480" height="auto"
+                alt="Pixel shuffle animation in neural networks with a block size of 2x2"></td>
+            <td><img src="media/pixel-shuffle-2x2-unshuffle.gif" width="480" height="auto"
+                alt="Pixel unshuffle animation in neural networks with a block size of 2x2"></td>
+        </tr>
+        <tr>
+            <td>2x2 Pixel Shuffle</td>
+            <td>2x2 Pixel Unshuffle</td>
+        </tr>
+        <tr>
+            <td colspan="2"><img src="media/pixel-shuffle-2x2-loop.gif" width="960" height="auto"
+                alt="Pixel shuffle and unshuffle in neural networks with a block size of 2x2 looping animation"></td>
+        </tr>
+        <tr>
+            <td colspan="2">2x2 Pixel Shuffle/Unshuffle Loop</td>
+        </tr>
+    </table>
+    <h3>3x3 Block Size</h3>
+    <table>
+        <tr>
+            <td><img src="media/pixel-shuffle-3x3-shuffle.gif" width="480" height="auto"
+                alt="Pixel shuffle animation in neural networks with a block size of 3x3"></td>
+            <td><img src="media/pixel-shuffle-3x3-unshuffle.gif" width="480" height="auto"
+                alt="Pixel unshuffle animation in neural networks with a block size of 3x3"></td>
+        </tr>
+        <tr>
+            <td>3x3 Pixel Shuffle</td>
+            <td>3x3 Pixel Unshuffle</td>
+        </tr>
+        <tr>
+            <td colspan="2"><img src="media/pixel-shuffle-3x3-loop.gif" width="960" height="auto"
+                alt="Pixel shuffle and unshuffle in neural networks with a block size of 3x3 looping animation"></td>
+        </tr>
+        <tr>
+            <td colspan="2">3x3 Pixel Shuffle/Unshuffle Loop</td>
         </tr>
     </table>
     <h2></h2>
